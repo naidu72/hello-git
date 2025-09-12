@@ -1,0 +1,5 @@
+*	git init
+*	git status
+*	git remote -v
+*	git remote
+*	git remote set-url origin https://github.com/naidu72/hello-git.git 
