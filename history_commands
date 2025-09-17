@@ -1,0 +1,50 @@
+git checkout -
+git lol --all
+git lol
+git config --global alias.lol "log  --graph --decorate"
+git log  --graph --decorate --oneline
+git log  --graph --decorate
+git log  --graph --oneline
+git log  --graph
+git log --decorate --oneline --graph
+git log --decorate --oneline
+git log --oneline -1
+git log --oneline -2
+git log --oneline
+git log -2
+git diff  master testing
+git diff testing master
+git commit -am "added command file copy for testing"
+git status -su
+git diff master testing
+git diff --staged
+git checkout master
+git status
+git diff
+git add .
+git checkout -b testing
+git diff HEAD
+tldr git diff
+git commit -am "added command file"
+git add  commands
+git add -a commands
+git remote set-url origin https://github.com/naidu72/hello-git.git
+git remote set-url add https://github.com/naidu72/hello-git.git
+git remote set-url https://github.com/naidu72/hello-git.git
+git status -suv
+git status -bn
+git status -b
+tldr git status
+git status -h
+git diff --help
+git update-index
+git remote update
+git remote -v
+git remote add upstream https://github.com/naidu72/hello-git.git
+git remote set-url upstream https://github.com/naidu72/hello-git.git
+git config --global --rename-section user.name
+git config --global user.name "naidu72"
+git config user.name naidu
+fisher install jorgebucaran/fish-git-util
+git config get-all
+git config
