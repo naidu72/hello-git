@@ -1,0 +1,21 @@
+name: native-arm64-build
+on: push
+jobs:
+  build:
+    runs-on: arc-pi          # must match the helm release name
+    steps:
+      - uses: actions/checkout@v4
+      - name: Where am I running?
+        run: |
+          uname -m
+          cat /etc/os-release | head -2
+          nproc
+          free -h
+      - name: Native arm64 docker build
+        run: |
+          cat > Dockerfile <<'EOF'
+          FROM python:3.12-slim
+          RUN pip install fastapi uvicorn
+          EOF
+          docker build -t test-arm64 .
+          docker image inspect test-arm64 --format '{{.Architecture}}'
